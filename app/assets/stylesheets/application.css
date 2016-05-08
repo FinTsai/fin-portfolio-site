@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background-pink {
+  background-color: #ECDCE5;
+}
+
+.padding-top-bottom-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.padding-top-bottom-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+p, li {
+  font-size: 18px;;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+  color: #EAC8DE;
+  font-size: 25px;
+}
+
+#main {
+  padding-top: 90px;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}

@@ -3,13 +3,15 @@
   <head>
     <title>Fin's Portflio Site</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container padding-top-bottom-10">
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
             <span class="icon-bar"></span>
@@ -21,7 +23,7 @@
             Fin</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav pull-right">
+          <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="/#about">About</a>
             </li>
@@ -36,7 +38,9 @@
       </div>
     </nav>
 
-    <%= yield %>
+    <div id="main">
+      <%= yield %>      
+    </div>
 
     <!-- Add footer here -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
