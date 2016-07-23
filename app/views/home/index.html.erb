@@ -50,21 +50,121 @@
       <h2>Portfolio</h2>
     </div>
     <div class="row">
-      <div class="col-sm-4">
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalBankingApp">
         <%= image_tag("octicons-terminal.svg", style: "width:250px;height:auto;", class: "center-block") %>
-        <%= image_tag("lets-meet-app.png", style: "width:320px;height:auto;", class: "center-block") %>
+        Banking App
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModalBankingApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabelBankingApp">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header background-pink">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabelBankingApp">Banking App</h4>
+            </div>
+            <div class="modal-body">
+              <%= image_tag("octicons-terminal.svg", style: "width:250px;height:auto;", class: "center-block") %>
+
+              This is my first command line application, written in Ruby. This app allows you to add, edit, view, remove customers and transations. The data are saved to csv files.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-7 col-sm-offset-1">
-        <h3>Banking App</h3>
-        <p>This is my first command line application, written in Ruby. This app allows you to add, edit, view, remove customers and transations. The data are saved to csv files.
-        </p>
-        <h3>Guess Number Game</h3>
-        <p>This is a command line application, written in Ruby. This game asks user to guess a number between a range, and tells the user whether the guess was correct.</p>
-        <h3>Retro Video Game App</h3>
-        <p>This app is for making easier for buyers and sellers to collaborate with each other to facilitate a comfortable environment to buy or rent retro video games.</p>
-        <h3>Let's Meet App</h3>
-        <p>This app is for people looking for coffee buddies. It is for people to meet a stranger who is available nearby for a coffee now. The user may want to meet people that come from different countries and share information together. However, for foreigners it may be difficult to know good cafes in the area.</p>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalGuessNumberGame">
+        <%= image_tag("octicons-terminal.svg", style: "width:250px;height:auto;", class: "center-block") %>
+        Guess Number Game
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModalGuessNumberGame" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGuessNumberGame">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header background-pink">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabelGuessNumberGame">Guess Number Game</h4>
+            </div>
+            <div class="modal-body">
+              <%= image_tag("octicons-terminal.svg", style: "width:250px;height:auto;", class: "center-block") %>
+              This is a command line application, written in Ruby. This game asks user to guess a number between a range, and tells the user whether the guess was correct.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalVideoGameApp">
+        <%= image_tag("retro-game-app.png", style: "width:250px;height:280px;", class: "center-block") %>
+        Retro Video Game App
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModalVideoGameApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabelVideoGameApp">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header background-pink">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabelVideoGameApp">Retro Video Game App</h4>
+            </div>
+            <div class="modal-body padding-top-bottom-40">
+              <%= image_tag("retro-game-app.png", style: "width:250px;height:auto;", class: "center-block") %>
+              <div class="padding-top-bottom-40">
+                This app is for making easier for buyers and sellers to collaborate with each other to facilitate a comfortable environment to buy or rent retro video games.
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalLetsMeetApp">
+        <%= image_tag("lets-meet-app.png", style: "width:400px;height:280px;", class: "center-block") %>
+        Let's Meet App
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModalLetsMeetApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabelLetsMeetApp">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header background-pink">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabelLetsMeetApp">Let's Meet App</h4>
+            </div>
+            <div class="modal-body padding-top-bottom-40">
+              <%= image_tag("lets-meet-app.png", style: "width:320px;height:auto;", class: "center-block") %>
+              <div class="padding-top-bottom-40">
+                This app is for people looking for coffee buddies. It is for people to meet a stranger who is available nearby for a coffee now. The user may want to meet people that come from different countries and share information together. However, for
+                foreigners it may be difficult to know good cafes in the area.
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

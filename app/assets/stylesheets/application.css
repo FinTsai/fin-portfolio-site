@@ -21,6 +21,10 @@ body {
   background-color: #ECDCE5;
 }
 
+.padding-top-bottom-40 {
+  padding-top: 40px;
+}
+
 .padding-top-bottom-20 {
   padding-top: 20px;
   padding-bottom: 20px;
